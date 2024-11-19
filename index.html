@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>aula17</title>
+</head>
+<body>
+    <label for="lTitulo">Exemplo 1- Evento: onclik</label>
+    <label for="ltitulo1">este exemplo exibe uma mensagem simples
+         utilizando o input- button
+        </label><br>
+        <input type="button" value="Clique aqui" 
+        onclick="mostrarAlerta()"><br>
+        <input type="button" value="Clique aqui1"
+        onclick="mostrarAlerta1('Marcos')">
+
+        <!-- Trabalhando com função-->
+        
+        <div>
+            <label for="lTexto">Digite algo: </label>
+            <input type="text" name="nTexto" id="idTexto">
+            <input type="button" value="Clique aqui"
+            onclick="idResultado.value=
+            mensagem_com_parametro_return(idTexto.value)"><br>
+
+
+            <label for="nResultado">Resultado: </label>
+            <input type="text" name="nResult" id="idResultado">
+            <br><br><br>
+            <!-- Calculo soma-->
+
+            <label for="lNumber">Digite um número: </label>
+            <input type="number" name="nNumber" id="idNumber1">
+            <br><br>
+            <label for="lNumber2">Digite outro Número: </label>
+            <input type="number" name="nNumber2" id="idNumber2">
+
+            <input type="button" value="soma"
+            onclick="idResultado3.value=soma_return(idNumber1.value,idNumber2.value)"
+            ><br><br>
+
+            <label for="nResultado">Resultado: </label>
+            <input type="number" name="nResultado" id="idResultado3">
+            
+        </div>
+
+</body>
+</html>
