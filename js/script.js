@@ -17,19 +17,19 @@ Parâmetro: string
 retorna: void
 void -> Significa que não retorna valor*/
 
-function MostrarAlerta(msg)
-{
-    alert("Boa noite,"+msg)
+// Função para exibir uma mensagem com parâmetro
+function mostrarAlerta1(msg) {
+    alert("Boa noite, " + msg);
 }
 
-function mensagem_com_parametro_return(msg1)
-{
-    return("você digitou:"+msg1);
+// Função para retornar uma mensagem com o texto digitado
+function mensagem_com_parametro_return(msg1) {
+    return "Você digitou: " + msg1;
 }
 
-
-function soma_return(num1, num2)
-{
-    soma= parseFloat(num1)  + parseFloat(num2); 
-    return(soma);
+// Função para somar dois números e retornar o resultado
+function soma_return(num1, num2) {
+    // Declaração explícita das variáveis
+    let soma = parseFloat(num1) + parseFloat(num2); // Conversão para números decimais
+    return soma; // Retorna o resultado da soma
 }
